@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <title>Quixabeira</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="./img/logo.png" alt="logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav position-absolute top-50 start-50 translate-middle">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Produtos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">A Quixabeira</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-disabled="true">Segmentos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Clientes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contatos</a>
+          </li>
+        </ul>
+      </div>
+      <div class="top-button">
+        <a class="navbar-brand" href="#">
+          <img src="./img/wpp.svg" alt="WhatsApp">
+          <p>Solicitar orçamento</p>
+        </a>
+      </div>
+    </div>
+  </nav>
+  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="8000">
+    <div class="carousel-indicators ">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active shadow-box">
+        <div class="position-absolute top-50 start-0 translate-middle-y ms-4 text-slide ">
+          <h2>
+            Fabricação de transporte de correias
+          </h2>
+          <p>
+            Movimente sua produção com eficiência e precisão. Nossas correias transportadoras garantem desempenho máximo
+            em qualquer ambiente.
+          </p>
+        </div>
+        <img src="./img/slide1.png" class="d-block w-100" alt="...">
+        <div class="top-button position-absolute bottom-0 end-0 translate-middle-y">
+          <a class="navbar-brand" href="#">
+            <img src="./img/wpp.svg" alt="WhatsApp">
+            <p>Solicite seu orçamento via WhatsApp</p>
+          </a>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <div class="position-absolute top-50 start-0 translate-middle-y ms-4 text-slide">
+          <h2>
+            Fabricação de Braço Giratório para Elevação de Carga
+          </h2>
+          <p>
+            Mobilidade e força em um só equipamento. Braços giratórios que facilitam seu dia a dia industrial.
+          </p>
+        </div>
+        <img src="./img/slide2.png" class="d-block w-100" alt="...">
+        <div class="top-button position-absolute bottom-0 end-0  translate-middle-y">
+          <a class="navbar-brand" href="#">
+            <img src="./img/wpp.svg" alt="WhatsApp">
+            <p>Solicite seu orçamento via WhatsApp</p>
+          </a>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="position-absolute top-50 start-0 translate-middle-y ms-4 text-slide">
+          <h2>
+            Equipamentos Industriais
+          </h2>
+          <p>
+            Equipamentos industriais de alta performance para otimizar seus processos e aumentar sua produtividade.
+          </p>
+        </div>
+        <img src="./img/silde3.png" class="d-block w-100" alt="...">
+        <div class="top-button position-absolute bottom-0 end-0  translate-middle-y">
+          <a class="navbar-brand" href="#">
+            <img src="./img/wpp.svg" alt="WhatsApp">
+            <p>Solicite seu orçamento via WhatsApp</p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <main class="container-main">
+    <div class="container-focous">
+      <div class="top-main">
+        <h3>Produtos</h3>
+        <p>Conheça nossos principais produtos</p>
+      </div>
+      <section>
+        <div class=" container-xxl">
+          <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active btt-categ selected" id="home-tab" data-bs-toggle="tab"
+                data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane"
+                aria-selected="true">Transportadores de Correia</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link btt-categ" id="profile-tab" data-bs-toggle="tab"
+                data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane"
+                aria-selected="false">Lançamento de Cargas</button>
+            </li>
+          </ul>
+          <div class="tab-content mt-3" id="myTabContent">
+            <div class="tab-pane fade show active gap-3 products" id="home-tab-pane" role="tabpanel"
+              aria-labelledby="home-tab" tabindex="0">
+              <div class="card" style="width: 18rem;">
+                <img src="./img/roleteCarga.png" class="card-img-top img-product" alt="...">
+                <div class="card-body">
+                  <p class="card-text">Rolete de carga com porta rolamento em nylon</p>
+                </div>
+              </div>
+              <div class="card" style="width: 18rem;">
+                <img src="./img/roloGuia.png" class="card-img-top " alt="...">
+                <div class="card-body">
+                  <p class="card-text">Rolo guia</p>
+                </div>
+              </div>
+              <div class="card" style="width: 18rem;">
+                <img src="./img/roleteNylon.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">Rolete de carga, fabricado com nylon</p>
+                </div>
+              </div>
+              <div class="card" style="width: 18rem;">
+                <img src="./img/cavaleteCarga.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">Cavalete de carga</p>
+                </div>
+              </div>
+              <div class="card" style="width: 18rem;">
+                <img src="./img/cavaleteMontado.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">Cavalete de carga montado</p>
+                </div>
+              </div>
+              <div class="card" style="width: 18rem;">
+                <img src="./img/cavaleteAuto.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">Cavalete auto-alinhante de carga</p>
+                </div>
+              </div>
+              <div class="card" style="width: 18rem;">
+                <img src="./img/cavaleteRetorno.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">Cavalete auto-alinhante de retorno</p>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="main-info">
+        <h2> A Quixabeira</h2>
+        <p>
+          Apesar de recente no mercado, nos destacamos pela dedicação em oferecer <b>soluções industriais
+            eficientes</b>. Somos especializados na fabricação de correias transportadoras, braços giratórios e
+          equipamentos industriais, focando em <b>inovação</b> e <b>qualidade</b> para atender às necessidades
+          específicas de cada cliente. Nossa missão é ser o parceiro ideal para quem busca elevar a produtividade com
+          tecnologia de ponta.
+        </p>
+      </section>
+    </div>
+  </main>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="./main.js"></script>
+
+</html>
