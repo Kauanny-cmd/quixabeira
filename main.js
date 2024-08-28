@@ -19,3 +19,5 @@ carousel.addEventListener('touchend', () => {
     bootstrap.Carousel.getInstance(carousel).prev();
   }
 });
+
+document.getElementById("current-year").textContent = new Date().getFullYear();
