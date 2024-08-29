@@ -11,7 +11,7 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg">
+  <nav class="navbar navbar-expand-lg fixed-top">
     <div class="container-fluid ">
       <a class="navbar-brand" href="#">
         <img src="./img/logo.png" alt="logo">
@@ -23,7 +23,7 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav position-absolute top-50 start-50 translate-middle">
           <li class="nav-item">
-            <a class="nav-link" aria-current="page"  href="#">Home</a>
+            <a class="nav-link" href="#">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#produtos">Produtos</a>
@@ -34,12 +34,6 @@
           <li class="nav-item">
             <a class="nav-link" aria-disabled="true">Segmentos</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Clientes</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contatos</a>
-          </li>
         </ul>
       </div>
       <div class="top-button pe-0">
@@ -49,7 +43,7 @@
       </div>
     </div>
   </nav>
-  
+
   <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="8000">
     <div class="carousel-indicators ">
       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
@@ -72,7 +66,7 @@
         </div>
         <img src="./img/slide1.png" class="d-block w-100" alt="...">
         <div class="top-button position-absolute bottom-0 end-0 translate-middle-y  z-1">
-          <a class="navbar-brand" href="#">
+          <a class="navbar-brand" href="https://wa.me/5511940739920" target="_blank">
             <img src="./img/wpp.svg" alt="WhatsApp">
             <p>Solicite seu orçamento via WhatsApp</p>
           </a>
@@ -90,7 +84,7 @@
         </div>
         <img src="./img/slide2.png" class="d-block w-100" alt="...">
         <div class="top-button position-absolute bottom-0 end-0  translate-middle-y  z-1">
-          <a class="navbar-brand" href="#">
+          <a class="navbar-brand" href="https://wa.me/5511940739920" target="_blank">
             <img src="./img/wpp.svg" alt="WhatsApp">
             <p>Solicite seu orçamento via WhatsApp</p>
           </a>
@@ -107,7 +101,7 @@
         </div>
         <img src="./img/silde3.png" class="d-block w-100" alt="...">
         <div class="top-button position-absolute bottom-0 end-0  translate-middle-y z-1">
-          <a class="navbar-brand" href="#">
+          <a class="navbar-brand" href="https://wa.me/5511940739920" target="_blank">
             <img src="./img/wpp.svg" alt="WhatsApp">
             <p>Solicite seu orçamento via WhatsApp</p>
           </a>
@@ -117,93 +111,127 @@
   </div>
   <main class="container-main">
     <div class="container-focous">
-      <div class="top-main" id="produtos">
-        <h3>Produtos</h3>
-        <p>Conheça nossos principais produtos</p>
-      </div>
       <section>
-        <div class=" container-xxl"> 
+        <div class="top-main" id="produtos">
+          <h3>Produtos</h3>
+          <p>Conheça nossos principais produtos</p>
+        </div>
+        <div class="">
           <ul class="nav nav-tabs" id="myTab" role="tablist">
             <li class="nav-item" role="presentation">
               <button class="nav-link active btt-categ selected" id="home-tab" data-bs-toggle="tab"
-                data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane"
-                aria-selected="true">Transportadores de Correia</button>
+                data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane">Transportadores
+                de Correia</button>
             </li>
             <li class="nav-item" role="presentation">
               <button class="nav-link btt-categ" id="profile-tab" data-bs-toggle="tab"
-                data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane"
-                aria-selected="false">Lançamento de Cargas</button>
+                data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane">Lançamento
+                de Cargas</button>
             </li>
           </ul>
           <div class="tab-content mt-3" id="myTabContent">
             <div class="tab-pane fade show active gap-3 products" id="home-tab-pane" role="tabpanel"
               aria-labelledby="home-tab" tabindex="0">
-              <div class="card" style="width: 18rem;">
-                <img src="./img/roleteCarga.png" class="card-img-top img-product" alt="...">
-                <div class="card-body">
-                  <p class="card-text">Rolete de carga com porta rolamento em nylon</p>
+              <section class="section-cards">
+                <div class="card">
+                  <div class="card-img">
+                    <img src="./img/roleteCarga.png" class="card-img-top img-product" alt="Rolete de carga">
+                  </div>
+                  <div class="card-body">
+                    <h4 class="card-text">Rolete de carga com porta rolamento em nylon</h4>
+                    <p>Rolete projetado para suportar a carga em sistemas de transporte, com porta rolamento fabricado
+                      em
+                      nylon, oferecendo alta resistência ao desgaste e baixo atrito.</p>
+                  </div>
                 </div>
-              </div>
-              <div class="card" style="width: 18rem;">
-                <img src="./img/roloGuia.png" class="card-img-top " alt="...">
-                <div class="card-body">
-                  <p class="card-text">Rolo guia</p>
+                <div class="card">
+                  <div class="card-img">
+                    <img src="./img/roloGuia.png" class="card-img-top img-product" alt="Rolo guia">
+                  </div>
+                  <div class="card-body">
+                    <h4 class="card-text">Rolo guia</h4>
+                    <p>Componente utilizado para manter a correia transportadora alinhada, prevenindo desvios e
+                      garantindo
+                      um transporte seguro e eficiente.</p>
+                  </div>
                 </div>
-              </div>
-              <div class="card" style="width: 18rem;">
-                <img src="./img/roleteNylon.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <p class="card-text">Rolete de carga, fabricado com nylon</p>
+                <div class="card">
+                  <div class="card-img">
+                    <img src="./img/roleteNylon.png" class="card-img-top img-product" alt="...">
+                  </div>
+                  <div class="card-body">
+                    <h4 class="card-text">Rolete de carga, fabricado com nylon</h4>
+                    <p>Rolete robusto, fabricado inteiramente em nylon, ideal para suportar cargas pesadas com
+                      durabilidade e resistência ao impacto.</p>
+                  </div>
                 </div>
-              </div>
-              <div class="card" style="width: 18rem;">
-                <img src="./img/cavaleteCarga.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <p class="card-text">Cavalete de carga</p>
+                <div class="card">
+                  <div class="card-img">
+                    <img src="./img/roleteCargaMetalico.png" class="card-img-top img-product"
+                      alt="Rolete de carga metálico">
+                  </div>
+                  <div class="card-body">
+                    <h4 class="card-text">Rolete de carga com porta rolamento metálico</h4>
+                    <p>Rolete construído para suportar cargas, equipado com um porta rolamento metálico, oferecendo
+                      maior durabilidade e suporte em aplicações de alta exigência.</p>
+                  </div>
                 </div>
-              </div>
-              <div class="card" style="width: 18rem;">
-                <img src="./img/cavaleteMontado.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <p class="card-text">Cavalete de carga montado</p>
+              </section>
+              <section class="section-cards">
+                <div class="card">
+                  <div class="card-img">
+                    <img src="./img/cavaleteMontado.png" class="card-img-top img-product" alt="Cavalete montado">
+                  </div>
+                  <div class="card-body">
+                    <h4 class="card-text">Cavalete de carga</h4>
+                    <p>Estrutura que suporta os roletes de carga em sistemas de transporte de correias, garantindo a
+                      estabilidade e o alinhamento adequado da correia.</p>
+                  </div>
                 </div>
-              </div>
-              <div class="card" style="width: 18rem;">
-                <img src="./img/cavaleteAuto.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <p class="card-text">Cavalete auto-alinhante de carga</p>
+                <div class="card">
+                  <div class="card-img">
+                    <img src="./img/cavaleteAuto.png" class="card-img-top img-product" alt="Cavalete auto-alinhante">
+                  </div>
+                  <div class="card-body">
+                    <h4 class="card-text">Cavalete auto-alinhante de carga</h4>
+                    <p>Um tipo de cavalete projetado para se ajustar automaticamente ao movimento da correia
+                      transportadora, mantendo-a centralizada e reduzindo o desgaste.</p>
+                  </div>
                 </div>
-              </div>
-              <div class="card" style="width: 18rem;">
-                <img src="./img/cavaleteRetorno.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <p class="card-text">Cavalete auto-alinhante de retorno</p>
+                <div class="card">
+                  <div class="card-img">
+                    <img src="./img/cavaleteRetorno.png" class="card-img-top img-product" alt="Cavalete de retorno">
+                  </div>
+                  <div class="card-body">
+                    <h4 class="card-text">Cavalete auto-alinhante de retorno</h4>
+                    <p>Um tipo de cavalete projetado para se ajustar automaticamente ao movimento da correia
+                      transportadora, mantendo-a centralizada e reduzindo o desgaste.</p>
+                  </div>
                 </div>
-              </div>
+              </section>
             </div>
             <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
             </div>
           </div>
         </div>
       </section>
-      <section class="main-info" id="aQuixabeira">
-        <h2> A Quixabeira</h2>
-        <p>
-          Apesar de recente no mercado, nos destacamos pela dedicação em oferecer <b>soluções industriais
-            eficientes</b>. Somos especializados na fabricação de correias transportadoras, braços giratórios e
-          equipamentos industriais, focando em <b>inovação</b> e <b>qualidade</b> para atender às necessidades
-          específicas de cada cliente. Nossa missão é ser o parceiro ideal para quem busca elevar a produtividade com
-          tecnologia de ponta.
-        </p>
-      </section>
     </div>
   </main>
+  <section class="main-info" id="aQuixabeira">
+    <img src="./img/fundo2.png" alt="">
+    <h2> A Quixabeira</h2>
+    <p>
+      Nos destacamos pela dedicação em oferecer <b>soluções industriais eficientes</b>. Somos especializados na fabricação de todos os componentes para correias transportadoras, como roletes de carga, rolo guia, cavaletes de carga, cavaletes auto-alinhantes, entre outros, além de braços giratórios e equipamentos industriais. Com <b>foco</b> em <b>inovação</b> e <b>qualidade</b>, atendemos às necessidades específicas de cada cliente, buscando ser o parceiro ideal para quem deseja elevar a produtividade com tecnologia de ponta.
+    </p>
+  </section>
   <footer>
     <section class="container-footer">
       <div class="footer-logo">
         <img src="./img/logo.png" alt="logo">
         <p>
-          Soluções Industriais de Qualidade. Especializados em componentes para correias transportadoras, braços giratórios e equipamentos industriais. Nosso compromisso é elevar a produtividade com inovação e tecnologia de ponta.
+          Soluções Industriais de Qualidade. Especializados em componentes para correias transportadoras, braços
+          giratórios e equipamentos industriais. Nosso compromisso é elevar a produtividade com inovação e tecnologia de
+          ponta.
         </p>
       </div>
       <div class="footer-menu">
@@ -211,42 +239,42 @@
         <a href="#produtos">Produtos</a>
         <a href="#aQuixabeira">A Quixabeira</a>
         <a href="#segmentos">Segmentos</a>
-        <a href="#nossosClientes">Nossos Clientes</a>
       </div>
       <div class="footer-contact">
         <h3>Contatos</h3>
-       <div>
-        <section>
-          <a href="https://maps.app.goo.gl/3D1NvQHmUdVebZrN8" target="_blank">
-            <img src="./img/pin.svg" alt="">
-             <p>Estr. da Cachoeira, 478 - Jardim Shangrila, São Paulo - SP, 02990-070</p>
-          </a>
-        </section>
-        <section>
-          <a href="tel:+551139793746" target="_blank">
-            <img src="./img/cell.svg" alt="">
-             <p>(11) 3979-3746</p>
-          </a>
-        </section>
-        <section>
-          <a href="https://wa.me/5511940739920" target="_blank">
-            <img src="./img/wpp2.svg" alt="">
-             <p>(11) 9 4073-9920</p>
-          </a>
-        </section>
-        <section>
-          <a href="https://wa.me/5511983784206" target="_blank">
-            <img src="./img/wpp2.svg" alt="">
-             <p>(11) 98378-4206</p>
-          </a>
-        </section>
-        <section>
-          <a href="https://mail.google.com/mail/u/qfcrolos@gmail.com/?view=cm&to=qfcrolos@gmail.com&su=&body=" target="_blank">
-            <img src="./img/email.svg" alt="">
-             <p>qfcrolos@gmail.com</p>
-          </a>
-        </section>
-       </div> 
+        <div>
+          <section>
+            <a href="https://maps.app.goo.gl/3D1NvQHmUdVebZrN8" target="_blank">
+              <img src="./img/pin.svg" alt="">
+              <p>Estr. da Cachoeira, 478 - Jardim Shangrila, São Paulo - SP, 02990-070</p>
+            </a>
+          </section>
+          <section>
+            <a href="tel:+551139793746" target="_blank">
+              <img src="./img/cell.svg" alt="">
+              <p>(11) 3979-3746</p>
+            </a>
+          </section>
+          <section>
+            <a href="https://wa.me/5511940739920" target="_blank">
+              <img src="./img/wpp2.svg" alt="">
+              <p>(11) 9 4073-9920</p>
+            </a>
+          </section>
+          <section>
+            <a href="https://wa.me/5511983784206" target="_blank">
+              <img src="./img/wpp2.svg" alt="">
+              <p>(11) 98378-4206</p>
+            </a>
+          </section>
+          <section>
+            <a href="https://mail.google.com/mail/u/qfcrolos@gmail.com/?view=cm&to=qfcrolos@gmail.com&su=&body="
+              target="_blank">
+              <img src="./img/email.svg" alt="">
+              <p>qfcrolos@gmail.com</p>
+            </a>
+          </section>
+        </div>
       </div>
     </section>
     <section class="footer-final">
