@@ -1,3 +1,5 @@
+/* Controle do carrossel */
+
 const carousel = document.querySelector('#carouselExampleIndicators');
 let startX = 0;
 let endX = 0;
@@ -19,5 +21,17 @@ carousel.addEventListener('touchend', () => {
     bootstrap.Carousel.getInstance(carousel).prev();
   }
 });
+/* Controle do carrossel - Fim */
 
+/* Ativação dos produtos */
+document.querySelectorAll('.btt-categ').forEach(button =>{
+  button.addEventListener('click',function(){
+    document.querySelectorAll('.btt-categ').forEach(element => {
+      element.classList.remove('selected');
+    });
+    this.classList.add('selected');
+  })
+})
+
+/* Atualiza o ano */
 document.getElementById("current-year").textContent = new Date().getFullYear();
