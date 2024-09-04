@@ -4,7 +4,7 @@
 
 body{
   background-color: #FFF;
-  font-family: Open Sans, Sans-serif;
+  font-family: Roboto, Open Sans, Sans-serif;
   font-size: 14px;
 }
 
@@ -19,7 +19,17 @@ h2{
 }
 
 h3{
-  color: #E8520C;
+  color: var(--Logo-Colors-Black, #1A1A1A);
+  font-family: Roboto Condensed;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  width: 1302px;
+  height: 18px;
+  gap: 0px;
+  opacity: 0px;
 }
 
 a{
@@ -33,6 +43,16 @@ a{
 
 .nav-item > a{
   color: #fff;
+}
+
+.navbar-nav .nav-link.active {
+  color: #ff5733; /* Cor diferente */
+  font-weight: bold; /* Negrito */
+}
+
+
+.nav-link:hover{
+  color: #E8520C;
 }
 
 .top-button {
@@ -137,10 +157,6 @@ a{
   background-color: transparent !important;
 }
 
-.nav-link:hover{
-  color: #E8520C;
-}
-
 .btt-categ{
   color:#ADB5BD;
 }
@@ -165,8 +181,8 @@ a{
 }
 
 .img-product {
-  width: 244px;
-  height: 223px;
+  width: 224px;
+  height: 193px;
   object-fit: contain; /* Garante que a imagem mantenha suas proporções dentro da div */
 }
 
@@ -239,15 +255,60 @@ a{
   color: var(--Logo-Colors-Orange-7, #E8520C);
 }
 
+.card-seg {
+  position: relative;
+  width: 307.5px;
+  height: 200px;
+  border-radius: 8px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+.element-seg {
+  position: absolute;
+  bottom: 16px;
+  left: 16px;
+  padding: 8px;
+  border-radius: 4px;
+}
+
+.element-seg > p {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 18px;
+  text-align: left;
+  color: #fff;
+  margin-top: 12px;
+}
+
+.icon-card {
+  width: 24px; /* Ajuste o tamanho do ícone conforme necessário */
+  height: auto;
+}
+
+.icon-card{
+  width: Hug (36px)px;
+  height: Hug (40px)px;
+  padding: 8px 6px;
+  gap: 10px;
+  border-radius: 6px;
+  opacity: 0px;
+  background: var(--Logo-Colors-Orange-7, #E8520C);
+}
+
 .container-footer{
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
   width: 100%;
   padding: 16px 32px;
+  padding-right: 20px;
   gap: 150px;
   background-color: var(--color-background, #1a1a1a);
   color: #E9ECEF;
+  overflow: hidden;
 }
 
 .container-footer > div{

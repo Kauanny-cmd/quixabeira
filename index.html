@@ -14,7 +14,7 @@
   <nav class="navbar navbar-expand-lg fixed-top">
     <div class="container-fluid ">
       <a class="navbar-brand" href="#">
-        <img src="./img/logo.png" alt="logo">
+        <img src="./assets/img/logo.png" alt="logo">
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -23,7 +23,7 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav position-absolute top-50 start-50 translate-middle">
           <li class="nav-item">
-            <a class="nav-link" href="#">Home</a>
+            <a class="nav-link" href="#init">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#produtos">Produtos</a>
@@ -32,7 +32,7 @@
             <a class="nav-link" href="#aQuixabeira">A Quixabeira</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" aria-disabled="true">Segmentos</a>
+            <a class="nav-link"  href="#segmentos">Segmentos</a>
           </li>
         </ul>
       </div>
@@ -44,7 +44,7 @@
     </div>
   </nav>
 
-  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="8000">
+  <div id="carouselExampleIndicators" class="carousel slide"  data-bs-ride="carousel" data-bs-interval="8000">
     <div class="carousel-indicators ">
       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
         aria-current="true" aria-label="Slide 1"></button>
@@ -53,7 +53,7 @@
       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
         aria-label="Slide 3"></button>
     </div>
-    <div class="carousel-inner">
+    <div class="carousel-inner section-now" id='init'>
       <div class="carousel-item active shadow-box">
         <div class="position-absolute top-50 start-0 translate-middle-y ms-4 text-slide ">
           <h2>
@@ -64,10 +64,10 @@
             em qualquer ambiente.
           </p>
         </div>
-        <img src="./img/slide1.png" class="d-block w-100" alt="...">
+        <img src="./assets/img/slide1.png" class="d-block w-100" alt="...">
         <div class="top-button position-absolute bottom-0 end-0 translate-middle-y  z-1">
           <a class="navbar-brand" href="https://wa.me/5511940739920" target="_blank">
-            <img src="./img/wpp.svg" alt="WhatsApp">
+            <img src="./assets/icons/wpp.svg" alt="WhatsApp">
             <p>Solicite seu orçamento via WhatsApp</p>
           </a>
         </div>
@@ -82,10 +82,10 @@
             Mobilidade e força em um só equipamento. Braços giratórios que facilitam seu dia a dia industrial.
           </p>
         </div>
-        <img src="./img/slide2.png" class="d-block w-100" alt="...">
+        <img src="./assets/img/slide2.png" class="d-block w-100" alt="...">
         <div class="top-button position-absolute bottom-0 end-0  translate-middle-y  z-1">
           <a class="navbar-brand" href="https://wa.me/5511940739920" target="_blank">
-            <img src="./img/wpp.svg" alt="WhatsApp">
+            <img src="./assets/icons/wpp.svg" alt="WhatsApp">
             <p>Solicite seu orçamento via WhatsApp</p>
           </a>
         </div>
@@ -99,24 +99,24 @@
             Equipamentos industriais de alta performance para otimizar seus processos e aumentar sua produtividade.
           </p>
         </div>
-        <img src="./img/silde3.png" class="d-block w-100" alt="...">
+        <img src="./assets/img/silde3.png" class="d-block w-100" alt="...">
         <div class="top-button position-absolute bottom-0 end-0  translate-middle-y z-1">
           <a class="navbar-brand" href="https://wa.me/5511940739920" target="_blank">
-            <img src="./img/wpp.svg" alt="WhatsApp">
+            <img src="./assets/icons/wpp.svg" alt="WhatsApp">
             <p>Solicite seu orçamento via WhatsApp</p>
           </a>
         </div>
       </div>
     </div>
   </div>
-  <main class="container-main">
+  <main class="container-main section-now" id="produtos">
     <div class="container-focous">
       <section>
-        <div class="top-main" id="produtos">
+        <div class="top-main">
           <h3>Produtos</h3>
           <p>Conheça nossos principais produtos</p>
         </div>
-        <div class="">
+        <div>
           <ul class="nav nav-tabs" id="myTab" role="tablist">
             <li class="nav-item" role="presentation">
               <button class="nav-link active btt-categ selected" id="home-tab" data-bs-toggle="tab"
@@ -130,12 +130,12 @@
             </li>
           </ul>
           <div class="tab-content mt-3" id="myTabContent">
-            <div class="tab-pane fade show active gap-3 products" id="home-tab-pane" role="tabpanel"
+            <div class="tab-pane fade show gap-3 products " id="home-tab-pane" role="tabpanel"
               aria-labelledby="home-tab" tabindex="0">
               <section class="section-cards">
                 <div class="card">
                   <div class="card-img">
-                    <img src="./img/roleteCarga.png" class="card-img-top img-product" alt="Rolete de carga">
+                    <img src="./assets/img/roleteCarga.png" class="card-img-top img-product" alt="Rolete de carga">
                   </div>
                   <div class="card-body">
                     <h4 class="card-text">Rolete de carga com porta rolamento em nylon</h4>
@@ -146,7 +146,7 @@
                 </div>
                 <div class="card">
                   <div class="card-img">
-                    <img src="./img/roloGuia.png" class="card-img-top img-product" alt="Rolo guia">
+                    <img src="./assets/img/roloGuia.png" class="card-img-top img-product" alt="Rolo guia">
                   </div>
                   <div class="card-body">
                     <h4 class="card-text">Rolo guia</h4>
@@ -157,7 +157,7 @@
                 </div>
                 <div class="card">
                   <div class="card-img">
-                    <img src="./img/roleteNylon.png" class="card-img-top img-product" alt="...">
+                    <img src="./assets/img/roleteNylon.png" class="card-img-top img-product" alt="...">
                   </div>
                   <div class="card-body">
                     <h4 class="card-text">Rolete de carga, fabricado com nylon</h4>
@@ -167,7 +167,7 @@
                 </div>
                 <div class="card">
                   <div class="card-img">
-                    <img src="./img/roleteCargaMetalico.png" class="card-img-top img-product"
+                    <img src="./assets/img/roleteCargaMetalico.png" class="card-img-top img-product"
                       alt="Rolete de carga metálico">
                   </div>
                   <div class="card-body">
@@ -180,7 +180,16 @@
               <section class="section-cards">
                 <div class="card">
                   <div class="card-img">
-                    <img src="./img/cavaleteMontado.png" class="card-img-top img-product" alt="Cavalete montado">
+                    <img src="./assets/img/impacto.png" class="card-img-top img-product" alt="Cavalete montado">
+                  </div>
+                  <div class="card-body">
+                    <h4 class="card-text">Rolete de impacto</h4>
+                    <p>Componente utilizado em sistemas de correias transportadoras para absorver o choque e proteger a correia nas áreas onde o material é carregado, garantindo maior durabilidade e menor desgaste do equipamento.</p>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-img">
+                    <img src="./assets/img/cavaleteMontado.png" class="card-img-top img-product" alt="Cavalete montado">
                   </div>
                   <div class="card-body">
                     <h4 class="card-text">Cavalete de carga</h4>
@@ -190,7 +199,7 @@
                 </div>
                 <div class="card">
                   <div class="card-img">
-                    <img src="./img/cavaleteAuto.png" class="card-img-top img-product" alt="Cavalete auto-alinhante">
+                    <img src="./assets/img/cavaleteAuto.png" class="card-img-top img-product" alt="Cavalete auto-alinhante">
                   </div>
                   <div class="card-body">
                     <h4 class="card-text">Cavalete auto-alinhante de carga</h4>
@@ -200,7 +209,7 @@
                 </div>
                 <div class="card">
                   <div class="card-img">
-                    <img src="./img/cavaleteRetorno.png" class="card-img-top img-product" alt="Cavalete de retorno">
+                    <img src="./assets/img/cavaleteRetorno.png" class="card-img-top img-product" alt="Cavalete de retorno">
                   </div>
                   <div class="card-body">
                     <h4 class="card-text">Cavalete auto-alinhante de retorno</h4>
@@ -211,23 +220,63 @@
               </section>
             </div>
             <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+              <section class="section-cards">
+                <div class="card">
+                  <div class="card-img">
+                    <img src="./assets/img/bracoGiratorio.png" class="card-img-top img-product" alt="Rolete de carga">
+                  </div>
+                  <div class="card-body">
+                    <h4 class="card-text">Braço giratório</h4>
+                    <p>Capacidade de até 5 Toneladas, fabricamos de acordo com a necessidade do cliente. Podendo ser com giro manual ou automatizado, com talha elétrica de corrente ou cabo de aço!</p>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-img">
+                    <img src="./assets/img/braco180.png" class="card-img-top img-product" alt="Rolo guia">
+                  </div>
+                  <div class="card-body">
+                    <h4 class="card-text">Braço giratório giro manual de 180°</h4>
+                    <p>Equipamento industrial projetado para a elevação e movimentação manual de cargas até 5 toneladas, com um giro de 180°, oferecendo flexibilidade e precisão no manuseio em espaços restritos.</p>
+                  </div>
+                </div>
+              </section>
             </div>
           </div>
         </div>
       </section>
     </div>
+    <div class="main-info section-now" id="aQuixabeira">
+      <img src="./assets/img/fundo2.png" alt="">
+      <h2> A Quixabeira</h2>
+      <p>
+        Nos destacamos pela dedicação em oferecer <b>soluções industriais eficientes</b>. Somos especializados na fabricação de todos os componentes para correias transportadoras, como roletes de carga, rolo guia, cavaletes de carga, cavaletes auto-alinhantes, entre outros, além de braços giratórios e equipamentos industriais. Com <b>foco</b> em <b>inovação</b> e <b>qualidade</b>, atendemos às necessidades específicas de cada cliente, buscando ser o parceiro ideal para quem deseja elevar a produtividade com tecnologia de ponta.
+      </p>
+    </div>
+    <div class="container-focous section-now">
+      <section>
+        <div class="top-main" id="segmentos">
+          <h3>Segmentos</h3>
+          <p>Conheça nossos segmentos de atuação e descubra como nossas soluções podem transformar seu negócio.</p>
+        </div>
+        <div>
+          <section>
+            <div class="card-seg">
+              <img src="./assets/img/mine.png" class="card-img" alt="mineração">
+              <div class="element-seg">
+                <img src="./assets/icons/mining.svg" alt="mineração" class="icon-card">
+                <p class="card-text">Mineração.</p>
+              </div>
+            </div>
+          </section>
+          <section></section>
+        </div>
+      </section>
+    </div>
   </main>
-  <section class="main-info" id="aQuixabeira">
-    <img src="./img/fundo2.png" alt="">
-    <h2> A Quixabeira</h2>
-    <p>
-      Nos destacamos pela dedicação em oferecer <b>soluções industriais eficientes</b>. Somos especializados na fabricação de todos os componentes para correias transportadoras, como roletes de carga, rolo guia, cavaletes de carga, cavaletes auto-alinhantes, entre outros, além de braços giratórios e equipamentos industriais. Com <b>foco</b> em <b>inovação</b> e <b>qualidade</b>, atendemos às necessidades específicas de cada cliente, buscando ser o parceiro ideal para quem deseja elevar a produtividade com tecnologia de ponta.
-    </p>
-  </section>
   <footer>
     <section class="container-footer">
       <div class="footer-logo">
-        <img src="./img/logo.png" alt="logo">
+        <img src="./assets/img/logo.png" alt="logo">
         <p>
           Soluções Industriais de Qualidade. Especializados em componentes para correias transportadoras, braços
           giratórios e equipamentos industriais. Nosso compromisso é elevar a produtividade com inovação e tecnologia de
@@ -245,32 +294,32 @@
         <div>
           <section>
             <a href="https://maps.app.goo.gl/3D1NvQHmUdVebZrN8" target="_blank">
-              <img src="./img/pin.svg" alt="">
+              <img src="./assets/icons/pin.svg" alt="">
               <p>Estr. da Cachoeira, 478 - Jardim Shangrila, São Paulo - SP, 02990-070</p>
             </a>
           </section>
           <section>
             <a href="tel:+551139793746" target="_blank">
-              <img src="./img/cell.svg" alt="">
+              <img src="./assets/icons/cell.svg" alt="">
               <p>(11) 3979-3746</p>
             </a>
           </section>
           <section>
             <a href="https://wa.me/5511940739920" target="_blank">
-              <img src="./img/wpp2.svg" alt="">
+              <img src="./assets/icons/wpp2.svg" alt="">
               <p>(11) 9 4073-9920</p>
             </a>
           </section>
           <section>
             <a href="https://wa.me/5511983784206" target="_blank">
-              <img src="./img/wpp2.svg" alt="">
+              <img src="./assets/icons/wpp2.svg" alt="">
               <p>(11) 98378-4206</p>
             </a>
           </section>
           <section>
             <a href="https://mail.google.com/mail/u/qfcrolos@gmail.com/?view=cm&to=qfcrolos@gmail.com&su=&body="
               target="_blank">
-              <img src="./img/email.svg" alt="">
+              <img src="./assets/icons/email.svg" alt="">
               <p>qfcrolos@gmail.com</p>
             </a>
           </section>
