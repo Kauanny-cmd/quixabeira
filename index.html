@@ -12,39 +12,33 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg fixed-top">
-    <div class="container-fluid ">
-      <a class="navbar-brand" href="#">
-        <img src="./assets/img/logo.png" alt="logo">
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav position-absolute top-50 start-50 translate-middle">
-          <li class="nav-item">
-            <a class="nav-link" href="#init">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#produtos">Produtos</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#aQuixabeira">A Quixabeira</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#segmentos">Segmentos</a>
-          </li>
-        </ul>
-      </div>
-      <div class="top-button pe-0">
-        <a class="navbar-brand" href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-          <p>Fale Conosco</p>
+  <header class="header">
+    <nav class="navbar">
+        <a href="#" class="nav-logo">
+          <img src="./assets/img/logo.png" alt="logo">
         </a>
-      </div>
-    </div>
-  </nav>
-
+        <ul class="nav-menu">
+            <li class="nav-item">
+                <a href="#init" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+                <a href="#produtos" class="nav-link">Produtos</a>
+            </li>
+            <li class="nav-item">
+                <a href="#aQuixabeira" class="nav-link">A Quixabeira</a>
+            </li>
+            <li class="nav-item">
+                <a href="#segmentos" class="nav-link">Segmentos</a>
+            </li>
+        </ul>
+        <a href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop" class="nav-button"> Fale Conosco </a>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+  </header>
   <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="8000">
     <div class="carousel-indicators ">
       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
@@ -61,7 +55,8 @@
             Fabricação de transporte de correias
           </h2>
           <p>
-            Movimente sua produção com eficiência e precisão. Nossas correias transportadoras garantem desempenho máximo
+            Movimente sua produção com eficiência e precisão. Nossas correias transportadoras garantem desempenho
+            máximo
             em qualquer ambiente.
           </p>
         </div>
@@ -110,8 +105,8 @@
       </div>
     </div>
   </div>
-  <main class="container-main section-now" id="produtos">
-    <div class="container-focous">
+  <main class="container-main section-now">
+    <div class=" section-now" id="produtos" >
       <section>
         <div class="top-main">
           <h3>Produtos</h3>
@@ -177,8 +172,6 @@
                       maior durabilidade e suporte em aplicações de alta exigência.</p>
                   </div>
                 </div>
-              </section>
-              <section class="section-cards">
                 <div class="card">
                   <div class="card-img">
                     <img src="./assets/img/impacto.png" class="card-img-top img-product" alt="Rolete de impacto">
@@ -192,20 +185,25 @@
                 </div>
                 <div class="card">
                   <div class="card-img">
-                    <img src="./assets/img/tamborVulcanizado.png" class="card-img-top img-product" alt="Tambor de retorno emborrachado, com borracha vulcanizada">
+                    <img src="./assets/img/tamborVulcanizado.png" class="card-img-top img-product"
+                      alt="Tambor de retorno emborrachado, com borracha vulcanizada">
                   </div>
                   <div class="card-body">
                     <h4 class="card-text">Tambor de retorno emborrachado, com borracha vulcanizada</h4>
-                    <p>Componente utilizado em correias transportadoras, revestido com borracha vulcanizada para melhorar a tração e aumentar a durabilidade, reduzindo o desgaste.</p>
+                    <p>Componente utilizado em correias transportadoras, revestido com borracha vulcanizada para
+                      melhorar a tração e aumentar a durabilidade, reduzindo o desgaste.</p>
                   </div>
                 </div>
                 <div class="card">
                   <div class="card-img">
-                    <img src="./assets/img/tamborCeramica.png" class="card-img-top img-product" alt="Tambor de acionamento com pastilha de cerâmica">
+                    <img src="./assets/img/tamborCeramica.png" class="card-img-top img-product"
+                      alt="Tambor de acionamento com pastilha de cerâmica">
                   </div>
                   <div class="card-body">
                     <h4 class="card-text">Tambor de acionamento com pastilha de cerâmica</h4>
-                    <p>Componente de correia transportadora utilizado para transmitir potência, revestido com pastilhas de cerâmica para aumentar a aderência, melhorar a tração e oferecer maior resistência ao desgaste.</p>
+                    <p>Componente de correia transportadora utilizado para transmitir potência, revestido com pastilhas
+                      de cerâmica para aumentar a aderência, melhorar a tração e oferecer maior resistência ao desgaste.
+                    </p>
                   </div>
                 </div>
                 <div class="card">
@@ -218,8 +216,6 @@
                       estabilidade e o alinhamento adequado da correia.</p>
                   </div>
                 </div>
-              </section>
-              <section class="section-cards">
                 <div class="card">
                   <div class="card-img">
                     <img src="./assets/img/cavaleteAuto.png" class="card-img-top img-product"
@@ -290,7 +286,6 @@
           <p>Conheça nossos segmentos de atuação e descubra como nossas soluções podem transformar seu negócio.</p>
         </div>
         <div class="segmentos-container">
-          <section>
             <div class="card-seg">
               <img src="./assets/img/mine.png" class="card-img" alt="pedreira">
               <div class="element-seg">
@@ -298,8 +293,6 @@
                 <p class="card-text">Pedreira</p>
               </div>
             </div>
-          </section>
-          <section>
             <div class="card-seg">
               <img src="./assets/img/agro.png" class="card-img" alt="Agroindústria">
               <div class="element-seg">
@@ -307,8 +300,6 @@
                 <p class="card-text">Agroindústria</p>
               </div>
             </div>
-          </section>
-          <section>
             <div class="card-seg">
               <img src="./assets/img/usina.png" class="card-img" alt="Usinas">
               <div class="element-seg">
@@ -316,8 +307,6 @@
                 <p class="card-text">Usinas</p>
               </div>
             </div>
-          </section>
-          <section>
             <div class="card-seg">
               <img src="./assets/img/ocean.png" class="card-img" alt="Portuário">
               <div class="element-seg">
@@ -325,7 +314,6 @@
                 <p class="card-text">Portuário</p>
               </div>
             </div>
-          </section>
         </div>
       </section>
     </div>
