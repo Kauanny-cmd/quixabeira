@@ -1,24 +1,31 @@
 @media (max-width: 1366px) {
   .container-main {
     padding: 20px;
-    width: 90%;
+    width: 100%;
     margin-left: 5.5%;
     overflow: hidden;
   }
 
-  .products {
-    flex-direction: column; 
-    gap: 16px;
+  .navbar {
+    padding: 1.5rem 2rem;
   }
 
-  .section-cards{
-    height: Hug (265px)px;
-    gap: 16px;
+  .products, .section-cards {
+    width: 100%;
   }
 
   .card{
     width: 23.6%;
     border-radius: 6px;
+  }
+
+  .card-body > p{
+    width: 100%;
+    height: 100%;
+  }
+
+  .tab-content{
+    width: 100%;
   }
 
   .card-seg {
@@ -108,6 +115,11 @@
     max-width: 307.5px; 
   }
 
+  .card-body > p{
+    width: 100%;
+    height: 100%;
+  }
+
   .segmentos-container{
     display: grid;
     grid-template-columns: auto auto;
@@ -162,8 +174,86 @@
   }
 }
 
-
 @media (max-width: 768px) {
+  .header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2; /* Para garantir que o cabeçalho fique acima do carrossel */
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px; /* Ajuste o padding conforme necessário */
+  }
+
+  .carousel {
+    height: 100vh; /* Faz o carrossel ocupar 100% da altura da tela */
+    overflow: hidden; /* Oculta o conteúdo que ultrapassa o contêiner */
+    position: relative; /* Para que os indicadores e outros elementos possam ser posicionados absolutamente */
+  }
+
+  .carousel-inner {
+    display: flex;
+    flex-direction: row; /* Alinha os slides horizontalmente */
+    width: 100%; /* Garante que o carrossel ocupe a largura total */
+    height: 100%; /* Garante que o carrossel ocupe a altura total */
+    transition: transform 0.5s ease-in-out; /* Transição suave ao mudar de slide */
+  }
+
+  .carousel-item {
+    flex: 0 0 100%; /* Cada slide ocupa 100% da largura do carrossel */
+    height: 96vh; /* Faz cada slide ocupar 100% da altura da tela */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .carousel-item .content {
+    width: 100%; /* Ajuste conforme necessário */
+    padding: 16px; /* Ajuste conforme necessário */
+    box-sizing: border-box; /* Garante que o padding não afete o tamanho total */
+    background: rgba(0, 0, 0, 0.5); /* Exemplo de fundo para destacar o conteúdo */
+    color: #fff; /* Cor do texto do conteúdo */
+    text-align: center; /* Alinha o texto ao centro */
+  }
+
+  .slide-image {
+    width: 100%;
+    height: 100%;
+  }
+
+  .text-slide {
+    margin-bottom: 20px; /* Ajusta o espaçamento abaixo do texto */
+  }
+
+  .top-button {
+    position: absolute;
+    bottom: 20px;
+  }
+
+  .indicator{
+    width: 44px; 
+    height: 6px;
+  }
+
+  .carousel-indicators {
+    height: 12px;
+    display: flex;
+    justify-contain: center;
+    margin-bottom: 62px;
+  }
+
+  .slide-image {
+    height: 100%;
+    object-fit: cover;
+  }
+
   .nav-menu {
     position: fixed;
     left: -100%;
@@ -194,7 +284,6 @@
   display:none;
 }
 
-
 .hamburger.active .bar:nth-child(2) {
   opacity: 0;
 }
@@ -207,35 +296,29 @@
   transform: translateY(-8px) rotate(-45deg);
 }
 
-  .container-main {
-    padding: 8px; /* Reduz o padding em dispositivos móveis */
-  }
-
   .top-button {
     display:none;
   }
-
+  
   .products, .section-cards {
     flex-direction: column; /* Empilha os elementos em uma coluna */
-    gap: 16px;
+    gap: 12px;
+    width: 100%;
   }
 
   .card {
-    flex: 0; /* Ocupa toda a largura disponível */
-    max-width: 100%; /* Remove o limite de largura */
+    flex: 1;
+    width: 100%;
+  }
+
+  .card-body > p{
+    width: 100%;
+    height: 100%;
   }
 
   .main-info > p {
     width: 100%; /* Ajuste para mobile */
     font-size: 14px;
-  }
-
-  .carousel-indicators {
-    display: none; /* Esconde os indicadores no mobile, se necessário */
-  }
-
-  .container-focous{
-    width: 50%;
   }
 
   .container-footer{
