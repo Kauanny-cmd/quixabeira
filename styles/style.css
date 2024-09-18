@@ -11,6 +11,8 @@
 html {
 	font-size: 62.5%;
 	font-family: 'Roboto', sans-serif;
+  font-size: 62.5%;
+  font-family: Roboto, Open Sans, Sans-serif;
 }
 
 li {
@@ -33,6 +35,14 @@ h2 {
 	line-height: 28px;
 	letter-spacing: 0.02em;
 	text-align: left;
+h2{
+  color: #E8520C;
+  font-family: Roboto, Open Sans, Sans-serif;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: 0.02em;
+  text-align: left;  
 }
 
 h3 {
@@ -45,6 +55,16 @@ h3 {
 	height: 18px;
 	gap: 0px;
 	opacity: 0px;
+h3{
+  color: var(--Logo-Colors-Black, #1A1A1A);
+  font-family: Roboto, Open Sans, Sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  text-align: left;
+  height: 18px;
+  gap: 0px;
+  opacity: 0px;
 }
 
 a {
@@ -312,6 +332,9 @@ a {
 	height: 193px;
 	object-fit: contain;
 	/* Garante que a imagem mantenha suas proporções dentro da div */
+  width: 224px;
+  height: 193px;
+  object-fit: contain;
 }
 
 .card-body {
@@ -364,6 +387,14 @@ a {
 	line-height: 24px;
 	letter-spacing: 0.02em;
 	text-align: left;
+.main-info > h2{
+  color: var(--Logo-Colors-Black, #1A1A1A);
+  font-family: Roboto, Open Sans, Sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  text-align: left;
 }
 
 .tab-content {
@@ -399,6 +430,16 @@ a {
 	font-family: Roboto;
 	width: 988px;
 	height: 144px;
+.main-info > p{
+  font-family: Roboto, Open Sans, Sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28.8px;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color:#1A1A1A;
+  width: 988px;
+  height: 144px;
 }
 
 .main-info>p>b {
