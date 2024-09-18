@@ -1,6 +1,6 @@
-/* Ativa seção atual */
+/* Seção 1: Ativa seção atual com base no scroll */
 document.addEventListener('DOMContentLoaded', function () {
-  const sections = document.querySelectorAll('.section-now'); // Seleciona os divs com a classe top-main
+  const sections = document.querySelectorAll('.section-now');
   const navLinks = document.querySelectorAll('.navbar .nav-link');
 
   function activateLink() {
@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', function () {
   window.addEventListener('scroll', activateLink);
 });
 
-/* Nav hamburguer */
+/* Seção 2: Menu hamburguer */
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
 const navLinks = document.querySelectorAll(".nav-link");
@@ -39,69 +39,128 @@ const navLinks = document.querySelectorAll(".nav-link");
 hamburger.addEventListener("click", mobileMenu);
 
 function mobileMenu() {
-    hamburger.classList.toggle("active");
-    navMenu.classList.toggle("active");
+  hamburger.classList.toggle("active");
+  navMenu.classList.toggle("active");
 }
 
-const navLink = document.querySelectorAll(".nav-link");
-
-navLink.forEach(n => n.addEventListener("click", closeMenu));
+navLinks.forEach(n => n.addEventListener("click", closeMenu));
 
 function closeMenu() {
-    hamburger.classList.remove("active");
-    navMenu.classList.remove("active");
+  hamburger.classList.remove("active");
+  navMenu.classList.remove("active");
 }
 
-/* Controle do carrossel */
-const carousel = document.querySelector('#carouselExampleIndicators');
+/* Seção 3: Controle do carrossel */
+const carousel = document.querySelector('.carousel-inner');
+const indicators = document.querySelectorAll('.carousel-indicators button');
+let currentIndex = 0;
+const totalItems = document.querySelectorAll('.carousel-item').length;
+
+function showSlide(index) {
+  carousel.style.transform = `translateX(-${index * 100}%)`;
+  indicators.forEach((button, i) => {
+    button.classList.toggle('active', i === index);
+  });
+}
+
+indicators.forEach((button, index) => {
+  button.addEventListener('click', () => {
+    currentIndex = index;
+    showSlide(currentIndex);
+  });
+});
+
+setInterval(() => {
+  currentIndex = (currentIndex + 1) % totalItems;
+  showSlide(currentIndex);
+}, 8000);
+
+// Toque de funcionalidade
 let startX = 0;
-let endX = 0;
+let isDragging = false;
 
 carousel.addEventListener('touchstart', (e) => {
   startX = e.touches[0].clientX;
+  isDragging = true;
 });
 
 carousel.addEventListener('touchmove', (e) => {
-  endX = e.touches[0].clientX;
-});
+  if (!isDragging) return;
+  const currentX = e.touches[0].clientX;
+  const difference = startX - currentX;
 
-carousel.addEventListener('touchend', () => {
-  if (startX > endX + 50) {
-    // Deslizar para a esquerda
-    bootstrap.Carousel.getInstance(carousel).next();
-  } else if (startX < endX - 50) {
-    // Deslizar para a direita
-    bootstrap.Carousel.getInstance(carousel).prev();
+  if (difference > 50) {
+    currentIndex = (currentIndex + 1) % totalItems;
+    showSlide(currentIndex);
+    isDragging = false;
+  } else if (difference < -50) {
+    currentIndex = (currentIndex - 1 + totalItems) % totalItems;
+    showSlide(currentIndex);
+    isDragging = false;
   }
 });
 
-/* Ativação dos produtos */
-document.querySelectorAll('.btt-categ').forEach(button =>{
-  button.addEventListener('click',function(){
+carousel.addEventListener('touchend', () => {
+  isDragging = false;
+});
+
+/* Seção 4: Ativação de botões de categorias */
+document.querySelectorAll('.btt-categ').forEach(button => {
+  button.addEventListener('click', function () {
     document.querySelectorAll('.btt-categ').forEach(element => {
       element.classList.remove('selected');
     });
     this.classList.add('selected');
-  })
-})
+  });
+});
 
-/* Atualiza view dos produtos */
+/* Seção 5: Atualização da view dos produtos com abas */
 document.addEventListener('DOMContentLoaded', function () {
   const tabs = document.querySelectorAll('.btt-categ');
   const tabPanes = document.querySelectorAll('.tab-pane');
 
   tabs.forEach((tab, index) => {
     tab.addEventListener('click', function () {
-      // Remover a classe 'active' de todas as abas e conteúdo
+      // Remover a classe 'selected' e 'show' de todas as abas e conteúdo
       tabs.forEach(t => t.classList.remove('selected', 'active'));
-      tabPanes.forEach(pane => pane.classList.remove('show', 'active','products'));
+      tabPanes.forEach(pane => {
+        pane.classList.remove('show', 'active');
+        pane.style.opacity = '0'; // Garantir que a opacidade esteja ajustada
+        pane.style.visibility = 'hidden'; // Garantir que a visibilidade esteja ajustada
+      });
 
-      // Adicionar a classe 'active' para a aba e conteúdo clicados
+      // Adicionar a classe 'selected' e 'show' para a aba e conteúdo clicados
       tab.classList.add('selected', 'active');
       tabPanes[index].classList.add('show', 'active');
+      tabPanes[index].style.opacity = '1'; // Garantir que a opacidade esteja ajustada
+      tabPanes[index].style.visibility = 'visible'; // Garantir que a visibilidade esteja ajustada
     });
   });
 });
 
-/* Atualiza o ano */
+/* Seção 6: Controle de modal */
+// Seleciona os elementos do modal
+const openModalBtn = document.getElementById('openModal');
+const closeModalBtn = document.getElementById('closeModal');
+const modal = document.getElementById('customModal');
+
+// Função para abrir o modal
+openModalBtn.addEventListener('click', function(event) {
+  event.preventDefault(); // Impede o comportamento padrão do link
+  modal.style.display = 'block'; // Exibe o modal
+});
+
+// Função para fechar o modal
+closeModalBtn.addEventListener('click', function() {
+  modal.style.display = 'none'; // Oculta o modal
+});
+
+// Fecha o modal ao clicar fora dele
+window.addEventListener('click', function(event) {
+  if (event.target === modal) {
+    modal.style.display = 'none';
+  }
+});
+
+/* Seção 7: Atualiza o ano automaticamente no footer */
 document.getElementById("current-year").textContent = new Date().getFullYear();
