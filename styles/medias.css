@@ -1,50 +1,87 @@
   @media (max-width: 1366px) {
-    .text-slide > h2{
-      font-size: 18px;
-    }
-    
-    .text-slide > p{
-      font-size: 16px;
+    body {
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
     }
 
-  .container-main {
-    padding: 20px;
-    width: 100%;
-    margin-left: 5.5%;
-    overflow: hidden;
+  .top-button {
+    padding-right: 2px;
+    bottom: 20px;
+    right: 20px;
   }
 
-  .products {
-    flex-direction: column; 
-    gap: 16px;
+  .top-button>a {
+    font-size: 12px;
+    padding: 8px 12px;
+    border-radius: 4px;
+  }
+
+  .text-slide > h2{
+    font-size: 18px;
+  }
+  
+  .text-slide > p{
+    font-size: 14px;
+    margin-top: 0px;
+  }
+
+  .container-main {
+    display: flex;
+    align-items: flex-start !important;
+    justify-content: space-around;
   }
 
   .tab-content{
-    max-width: 1003px;
-  }
-
-  .btt-categ{
-    font-size: 12px;
-    margin-left: -50px;
-  }
-
-  .products, .section-cards {
     width: 100%;
+  }
+
+  .nav-tabs {
+    gap: 4px;
+    margin-left: 12px;
+  }
+
+  #produtos{
+    width: 100%;
+  }
+
+  .section-cards {
+    display: flex !important;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 14px;
+    justify-content: center;
   }
 
   .card{
-    flex: 0 0 calc(33% - 12px);
-    border-radius: 6px;
+    min-width: 50px;
+    margin-bottom: 0px;
   }
-
-  .card-body > p{
-    width: 100%;
-    height: 100%;
+  
+  .top-main>h3{
+    margin-bottom: 4px;
   }
 
   .tab-content{
+    display: block;
+  }
+
+   .section-cards {
     width: 100%;
   }
+
+.top-main, .tab-pane, .nav-tabs  {
+  padding: 0px;
+  margin: 0px;
+}
+
+.top-main{
+  margin: 32px 0px 16px 32px;
+}
+
+.nav-tabs{
+  margin-left: 32px;
+}
 
   .card-seg {
     width: 100%;
@@ -69,9 +106,9 @@
     max-width: 1050px;
     max-height: 200px;
     gap: 12px;
+    margin-top: 16px;
   }
 
-  
   .card-body > p{
     font-size: 12px;
     max-width: 100%;
@@ -83,8 +120,10 @@
   .card-img {
     width: 100%;
     height: 100%;
-    padding: 0px;
-    border-radius: 8px;
+  }
+
+  .main-info{
+    margin-bottom: 0px;
   }
 
   .main-info > p {
@@ -255,17 +294,17 @@
   }
 
   .carousel {
-    height: 100vh; /* Faz o carrossel ocupar 100% da altura da tela */
-    overflow: hidden; /* Oculta o conteúdo que ultrapassa o contêiner */
-    position: relative; /* Para que os indicadores e outros elementos possam ser posicionados absolutamente */
+    height: 100vh;
+    overflow: hidden;
+    position: relative; 
   }
 
   .carousel-inner {
     display: flex;
-    flex-direction: row; /* Alinha os slides horizontalmente */
-    width: 100%; /* Garante que o carrossel ocupe a largura total */
-    height: 100%; /* Garante que o carrossel ocupe a altura total */
-    transition: transform 0.5s ease-in-out; /* Transição suave ao mudar de slide */
+    flex-direction: row;
+    width: 100%; 
+    height: 100%; 
+    transition: transform 0.5s ease-in-out; 
   }
 
   .carousel-item {
@@ -281,10 +320,13 @@
   .carousel-item .content {
     width: 100%; /* Ajuste conforme necessário */
     padding: 16px; /* Ajuste conforme necessário */
-    box-sizing: border-box; /* Garante que o padding não afete o tamanho total */
+    box-sizing: border-box; 
     background: rgba(0, 0, 0, 0.5); /* Exemplo de fundo para destacar o conteúdo */
     color: #fff; /* Cor do texto do conteúdo */
     text-align: center; /* Alinha o texto ao centro */
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .slide-image {
@@ -297,8 +339,23 @@
   }
 
   .top-button {
+    padding-right: 0px;
     position: absolute;
-    bottom: 20px;
+    bottom: 0px;
+    right: 0px;
+    z-index: 1;
+  }
+  
+  .top-button>a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 12px;
+    background-color: #E8520C;
+    gap: 4px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: white;
   }
 
   .indicator{
@@ -364,7 +421,7 @@
     display:none;
   }
   
-  .products, .section-cards {
+  .section-cards {
     flex-direction: column; /* Empilha os elementos em uma coluna */
     gap: 12px;
     width: 100%;
