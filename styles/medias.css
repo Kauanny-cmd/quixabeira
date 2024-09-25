@@ -1,4 +1,4 @@
-  @media (max-width: 1366px) {
+  @media (max-width:1366px){
     body {
       margin: 0;
       padding: 0;
@@ -28,12 +28,20 @@
 
   .container-main {
     display: flex;
-    align-items: flex-start !important;
+    align-items: center !important;
     justify-content: space-around;
   }
 
   .tab-content{
     width: 100%;
+  }
+
+  .card {
+    width: Fill (307.5px);
+    max-height: 368px;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid var(--Gray-2, #E9ECEF);
   }
 
   .nav-tabs {
@@ -84,7 +92,7 @@
 }
 
   .card-seg {
-    width: 100%;
+    min-width: 250px;
   }
 
   .element-seg {
@@ -103,10 +111,16 @@
   }
 
   .segmentos-container{
-    max-width: 1050px;
+    width: 100%;
     max-height: 200px;
     gap: 12px;
     margin-top: 16px;
+  }
+
+  .main-seg{
+    justify-content: center;
+    display: flex;
+    align-items: center;
   }
 
   .card-body > p{
@@ -197,19 +211,19 @@
 }
 
 .btt-categ{
-  font-size: 12px;
-  margin-left: -50px;
+  font-size: 14px;
+  margin-left: 0px;
 }
 
 .section-cards{
   flex-wrap: wrap;
-  max-width:  886px;
+  max-width: 100%;
   gap: 12px;
-  justify-content:space-between;
+  justify-content:center;
 }
   .card {
-    flex: 0 0 calc(34% - 24px); 
-    width: 100%;
+    max-width: 270.5px;
+    max-height: 588px;
   }
 
   .card-body > h4{
@@ -224,13 +238,44 @@
   }
 
   .segmentos-container{
-    display: grid;
-    grid-template-columns: auto auto;
-    gap: 12px;
+    display: flex;
+    width: 100%;
+    gap: 8px;
   }
 
   .card-seg{
-    width: 100%;
+    max-width: 195px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+  }
+
+  .icon-card {
+    width: 18px;
+    height: auto;
+  }
+  
+  .icon-card {
+    width: 32px;
+    height: 32px;
+  }
+
+  .element-seg {
+    position: absolute;
+    bottom: 6px;
+    left: 16px;
+  }
+
+  .element-seg>p {
+    font-size: 16px;
+    line-height: 12px;
+    margin-top: 8px;
+  }
+
+  .top-main {
+    padding-left: 0px;
+    color: #6C757D;
+    margin-bottom: 18px;
   }
 
   .container-footer{
@@ -429,11 +474,26 @@
 
   .section-cards, .segmentos-container{
     max-width: 766px;
+    max-height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     gap: 8px;
   }
-    .card, .card-seg {
-      flex: 1; 
-      width: 100%;
+
+    .card {
+      max-width: 70%;
+      max-height: 325px;
+    }
+
+    .img-product {
+      width: 324px;
+      height: 193px;
+      object-fit: contain;
+    }
+
+    .card-body>h4 {
+      font-size: 18px;
     }
 
     .btt-categ{
@@ -441,20 +501,71 @@
     }
 
     .card-body > p{
-      font-size: 12px;
+      font-size: 16px;
       width: 100%;
       height: 100%;
       font-wrap: break-word;
-      line-height: 16px;
+      line-height: 22.4px;
     }
 
+    .main-info {
+      max-height: 300px;
+      margin-bottom: 40px;
+    }
+
+.main-info > h2{
+  font-size: 24px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  margin-bottom: 0px;
+}
+
   .main-info > p {
-    width: 100%; /* Ajuste para mobile */
-    font-size: 14px;
+    font-size: 18px;
+    max-width: 583px;
+    max-height: 204px;
+    line-height: 28.8px;
+    letter-spacing: 0.02em;
+    text-align: justify;
+  }
+
+  .main-info>img {
+    width: 140px;
+  }
+
+  .icon-card {
+    width: 18px;
+    height: auto;
+  }
+  
+  .icon-card {
+    width: 32px;
+    height: 32px;
+  }
+
+  .top-main>h3{
+    margin-bottom: 8px;
+  }
+
+  .top-main>p{
+    width: 100%;
+    height: 48px;
+    font-size: 16px;
+  }
+
+  .main-seg{
+    padding: 0px 16px 0px 16px;
+    width: 100%;
+  }
+
+  .card-seg {
+    flex:1;
   }
 
   .container-footer{
     gap: 80px;
+    height: 100%;
   }
 
   .container-footer > div{
@@ -489,6 +600,7 @@
   .footer-menu{
     max-width:760px;
     flex:0;
+    padding: 0px;
   }
 
   .footer-menu > a{
@@ -503,12 +615,11 @@
 
   .footer-contact > h3{
     font-size: 12px;
-    margin-bottom: -4px;
+    margin-bottom: 4px;
   }
 
   .link-footer > p{
     font-size: 10px;
-    margin-top: 16px;
   }
 
   .container-footer{  
@@ -526,7 +637,7 @@
   .container-footer > div:nth-child(2),
   .container-footer > div:nth-child(1) {
     border-top: 1px solid var(--Gray-8, #343A40);
-    padding: 20px 20px 0px 20px;
+    padding: 20px 0px 0px 0px;
     width: 453px;
   }  
 
