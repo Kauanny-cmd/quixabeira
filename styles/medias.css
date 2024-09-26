@@ -339,7 +339,7 @@
   }
 
   .carousel {
-    height: 100vh;
+    height: 96vh;
     overflow: hidden;
     position: relative; 
   }
@@ -349,7 +349,7 @@
     flex-direction: row;
     width: 100%; 
     height: 100%; 
-    transition: transform 0.5s ease-in-out; 
+    transition: transform 0.5s ease-in-out;
   }
 
   .carousel-item {
@@ -379,30 +379,6 @@
     height: 100%;
   }
 
-  .text-slide {
-    margin-bottom: 20px; /* Ajusta o espaçamento abaixo do texto */
-  }
-
-  .top-button {
-    padding-right: 0px;
-    position: absolute;
-    bottom: 0px;
-    right: 0px;
-    z-index: 1;
-  }
-  
-  .top-button>a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 8px 12px;
-    background-color: #E8520C;
-    gap: 4px;
-    border-radius: 6px;
-    text-decoration: none;
-    color: white;
-  }
-
   .indicator{
     width: 44px; 
     height: 6px;
@@ -412,7 +388,7 @@
     height: 12px;
     display: flex;
     justify-contain: center;
-    margin-bottom: 62px;
+    margin-bottom: 12px;
   }
 
   .slide-image {
@@ -462,14 +438,64 @@
   transform: translateY(-8px) rotate(-45deg);
 }
 
-  .top-button {
+  .top-button::nth-child(first) {
     display:none;
   }
+
+  .top-button{
+    padding-right: 32px;
+	  position: block;
+    width: 92%;
+    height: 56px;
+    padding: 8px 12px;
+    gap: 6px;
+    bottom: 70px;
+    right: 20px;
+  }
+
+  .top-button>a {
+    font-size: 16px;
+    width: 100%;
+    height: 100%;
+  }
   
+  .text-slide {
+    padding-left:42px;
+    position: block;
+    top: 76%;
+    transform: translateY(-50%);
+    color: #E9ECEF;
+    z-index: 1;
+    max-width: 90%;
+    max-height: 212px;
+    gap: 16px;
+  }
+
+  .text-slide>h2{
+    max-font-size: 24px;
+    line-height: 28px;
+    font-weight: 500;
+  }
+  
+  .text-slide> p{
+    max-font-size: 22px;
+    line-height: 28px;
+    margin-top: 12px;
+    max-width: 800px;
+    max-height: 46px;
+  }
+
   .section-cards {
     flex-direction: column; /* Empilha os elementos em uma coluna */
     gap: 12px;
     width: 100%;
+  }
+
+  .container-main {
+    display: flex;
+    align-items: center !important;
+    justify-content: space-around;
+    gap:26px;
   }
 
   .section-cards, .segmentos-container{
@@ -478,40 +504,45 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 8px;
+    gap: 12px;
   }
 
-    .card {
-      max-width: 70%;
-      max-height: 325px;
-    }
+  .card {
+    max-width: 70%;
+    max-height: 325px;
+  }
 
-    .img-product {
-      width: 324px;
-      height: 193px;
-      object-fit: contain;
-    }
+  .card-img {
+    max-width: 100%;
+  }
 
-    .card-body>h4 {
-      font-size: 18px;
-    }
+  .img-product {
+    max-width: 324px;
+    max-height: 193px;
+    object-fit: contain;
+  }
 
-    .btt-categ{
-      margin-left: 0px;
-    }
+  .card-body>h4 {
+    font-size: 18px;
+  }
 
-    .card-body > p{
-      font-size: 16px;
-      width: 100%;
-      height: 100%;
-      font-wrap: break-word;
-      line-height: 22.4px;
-    }
+  .btt-categ{
+    margin-left: 0px;
+  }
 
-    .main-info {
-      max-height: 300px;
-      margin-bottom: 40px;
-    }
+  .card-body > p{
+    font-size: 16px;
+    width: 100%;
+    height: 100%;
+    font-wrap: break-word;
+    line-height: 22.4px;
+  }
+
+  .main-info {
+    max-height: 300px;
+    margin-bottom: 60px;
+    z-index: 0;
+  }
 
 .main-info > h2{
   font-size: 24px;
@@ -546,11 +577,12 @@
 
   .top-main>h3{
     margin-bottom: 8px;
+    font-size: 26px;
   }
 
   .top-main>p{
     width: 100%;
-    height: 48px;
+    min-height: 38px;
     font-size: 16px;
   }
 
@@ -573,21 +605,23 @@
   }
 
   .footer-logo{
-    max-width: 760px;
-    max-height: 88px;
+    max-width: 100%;
+    max-height: 188px;
     gap: 16px;
     flex:0;
   }
 
   .footer-logo > img{
     max-width: 113px;
-    margin-bottom: 12px;
+    max-height: 40.7px;
+    margin: 0;
   }
   
   .footer-logo > p{
     width: 100%;
+    height: 100%;
     font-weight: 500;
-    line-height: 25.6px;
+    line-height: 12.6px;
     text-align: left;
     word-wrap: break-word;
     font-size: 8px;
