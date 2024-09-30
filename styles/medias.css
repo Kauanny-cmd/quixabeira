@@ -1,195 +1,4 @@
-  @media (max-width:1366px){
-    body {
-      margin: 0;
-      padding: 0;
-      overflow-x: hidden;
-    }
-
-  .top-button {
-    padding-right: 2px;
-    bottom: 20px;
-    right: 20px;
-  }
-
-  .top-button>a {
-    font-size: 12px;
-    padding: 8px 12px;
-    border-radius: 4px;
-  }
-
-  .text-slide > h2{
-    font-size: 18px;
-  }
-  
-  .text-slide > p{
-    font-size: 14px;
-    margin-top: 0px;
-  }
-
-  .container-main {
-    display: flex;
-    align-items: center !important;
-    justify-content: space-around;
-  }
-
-  .tab-content{
-    width: 100%;
-  }
-
-  .card {
-    width: Fill (307.5px);
-    max-height: 368px;
-    border-radius: 8px;
-    overflow: hidden;
-    border: 1px solid var(--Gray-2, #E9ECEF);
-  }
-
-  .nav-tabs {
-    gap: 4px;
-    margin-left: 12px;
-  }
-
-  #produtos{
-    width: 100%;
-  }
-
-  .section-cards {
-    display: flex !important;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 14px;
-    justify-content: center;
-  }
-
-  .card{
-    min-width: 50px;
-    margin-bottom: 0px;
-  }
-  
-  .top-main>h3{
-    margin-bottom: 4px;
-  }
-
-  .tab-content{
-    display: block;
-  }
-
-   .section-cards {
-    width: 100%;
-  }
-
-.top-main, .tab-pane, .nav-tabs  {
-  padding: 0px;
-  margin: 0px;
-}
-
-.top-main{
-  margin: 32px 0px 16px 32px;
-}
-
-.nav-tabs{
-  margin-left: 32px;
-}
-
-  .card-seg {
-    min-width: 250px;
-  }
-
-  .element-seg {
-    position: absolute;
-    bottom: 8px;
-    left: 8px;
-    padding: 4px;
-  }
-  
-  .element-seg > p {
-    font-size: 16px;
-  }
-
-  .icon-card {
-    width: 34px;
-  }
-
-  .segmentos-container{
-    width: 100%;
-    max-height: 200px;
-    gap: 12px;
-    margin-top: 16px;
-  }
-
-  .main-seg{
-    justify-content: center;
-    display: flex;
-    align-items: center;
-  }
-
-  .card-body > p{
-    font-size: 12px;
-    max-width: 100%;
-    max-height: 110px;
-    font-wrap: break-word;
-    line-height: 16px;
-  }
-
-  .card-img {
-    width: 100%;
-    height: 100%;
-  }
-
-  .main-info{
-    margin-bottom: 0px;
-  }
-
-  .main-info > p {
-    width: 90%; 
-    font-size: 16px;
-  }
-
-  .container-footer{
-    gap: 60px;
-  }
-
-  .container-footer > div{
-    flex:1;
-  }
-
-  .footer-logo{
-    max-width: 520px;
-    max-height: 88px;
-    gap: 16px;
-    flex:0;
-  }
-
-  .footer-logo > img{
-    max-width: 143px;
-    margin-bottom: 12px;
-  }
-  
-  .footer-logo > p{
-    width: 100%;
-    font-weight: 500;
-    line-height: 25.6px;
-    text-align: left;
-    word-wrap: break-word;
-    font-size: 14px;
-  }
-  
-  .footer-menu > a{
-    line-height: 12px;
-  }
-
-  .footer-menu{
-    width:10px;
-    flex:0;
-  }
-  
-  .footer-contact{
-    max-width: 308px;
-    flex:0;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 1023px) {
+/* @media (min-width: 768px) and (max-width: 1023px) {
   .text-slide {
     font-size: 18px;
     line-height: 18px;
@@ -320,22 +129,22 @@
     max-width: 218px;
     flex:0;
   }
-}
+} */
 
-@media (max-width: 768px) {
+
+@media (max-width: 767px) {
   .header {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 2; /* Para garantir que o cabeçalho fique acima do carrossel */
+    position: fixed;
+	  width: 100%;
+	  z-index: 10;
   }
 
   .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px; /* Ajuste o padding conforme necessário */
+    padding: 10px 16px 10px 16px; /* Ajuste o padding conforme necessário */
+    width: 100%;
   }
 
   .carousel {
@@ -387,7 +196,7 @@
   .carousel-indicators {
     height: 12px;
     display: flex;
-    justify-contain: center;
+    justify-content: center;
     margin-bottom: 12px;
   }
 
@@ -407,24 +216,24 @@
     transition: 0.3s;
     box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
     z-index: 10;
-}
+  }
 
-.nav-menu.active {
-    left: 0;
-}
+  .nav-menu.active {
+      left: 0;
+  }
 
-.nav-item {
-  margin: 1.5rem 0;
-}
+  .nav-item {
+    margin: 1.5rem 0;
+  }
 
-.hamburger {
-    display: block;
-    cursor: pointer;
-}
+  .hamburger {
+      display: block;
+      cursor: pointer;
+  }
 
-.nav-button{
-  display:none;
-}
+  .nav-button{
+    display:none;
+  }
 
 .hamburger.active .bar:nth-child(2) {
   opacity: 0;
@@ -544,13 +353,13 @@
     z-index: 0;
   }
 
-.main-info > h2{
-  font-size: 24px;
-  line-height: 24px;
-  letter-spacing: 0.02em;
-  text-align: left;
-  margin-bottom: 0px;
-}
+  .main-info > h2{
+    font-size: 24px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    margin-bottom: 0px;
+  }
 
   .main-info > p {
     font-size: 18px;
