@@ -182,7 +182,7 @@ function getDistanceFromTheTop(element) {
 
 function scrollToSection(event) {
   event.preventDefault();
-  const distanceFromTheTop = getDistanceFromTheTop(event.target) - 90;
+  const distanceFromTheTop = getDistanceFromTheTop(event.target) - 56;
   smoothScrollTo(0, distanceFromTheTop);
 }
 
@@ -197,7 +197,7 @@ function smoothScrollTo(endX, endY, duration) {
   const distanceY = endY - startY;
   const startTime = new Date().getTime();
 
-  duration = typeof duration !== "undefined" ? duration : 400;
+  duration = typeof duration !== "undefined" ? duration : 100;
 
   const easeInOutQuart = (time, from, distance, duration) => {
     if ((time /= duration / 2) < 1)
