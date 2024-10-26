@@ -7,7 +7,7 @@
 }
 
 html {
-  	font-family: Roboto, Open Sans, Sans-serif;
+  font-family: Roboto, Open Sans, Sans-serif;
 	scroll-behavior: smooth;
 	scroll-padding-top: 90px;
 }
@@ -485,19 +485,6 @@ a {
 	border-radius: 6px;
 	background: var(--Logo-Colors-Orange-7, #E8520C);
 }
-
-/* .shadow-seg::after{
-	content: "";
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background: linear-gradient(90deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.1) 100%);
-	mix-blend-mode: multiply;
-} */
-
-
 /* Footer */
 .container-footer {
 	display: flex;
@@ -723,149 +710,4 @@ a {
   	display: flex;
 	justify-content: space-between;
 	width: 100%;
-}
-
-@media screen and (min-width: 1px) and (max-width: 767px){
-	.header{
-		display: none;
-	}
-
-	.nav-menu {
-    position: fixed;
-    left: -100%;
-    top: 5rem;
-    flex-direction: column;
-    background-color: #101010;
-    width: 100%;
-    text-align: center;
-    transition: 0.3s;
-    box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
-    z-index: 10;
-  }
-
-  .nav-menu.active {
-      left: 0;
-  }
-
-  .nav-item {
-    margin: 1.5rem 0;
-  }
-
-  .hamburger {
-      display: block;
-      cursor: pointer;
-  }
-
-  .nav-button{
-    display:none;
-  }
-
-.hamburger.active .bar:nth-child(2) {
-  opacity: 0;
-}
-
-.hamburger.active .bar:nth-child(1) {
-  transform: translateY(8px) rotate(45deg);
-}
-
-.hamburger.active .bar:nth-child(3) {
-  transform: translateY(-8px) rotate(-45deg);
-}
-
-	/* Carrossel */
-	.carousel {
-		height: 94vh;
-	}
-	
-	.carousel-item {
-		height: 94vh;
-		background-size: 100%;
-		justify-content: flex-end;
-		padding: 20px 20px 72px 20px;
-		gap: 42px;
-	}
-	
-	.carousel-item:nth-child(1){
-		background-image: url('../assets/img/slide1-mobile.png');
-	}
-	
-	.carousel-item:nth-child(2){
-		background-image: url('../assets/img/slide2-mobile.png');
-	}
-	
-	.carousel-item:nth-child(3){
-		background-image: url('../assets/img/silde3-mobile.png');
-	}
-	
-	.shadow-box::after {
-		background: linear-gradient(0deg, rgba(0, 0, 0, 0.75) 42.6%, rgba(0, 0, 0, 0.1) 100%);
-	}
-	
-	.top-button {
-		width: 100%;
-	}
-	
-	.top-button>a {
-		padding: 12px;
-	}
-
-	/* Produtos */
-	#produtos{
-		padding: 16px;
-	}
-
-	.tab-content {
-		width: 100%;
-	}
-
-	.section-cards {
-		grid-template-columns: 1fr;
-	}
-
-	.top-main {
-		padding-bottom: 8px;
-	}
-
-	/* A Quixabeiras */
-	.main-info {
-		padding: 32px 16px;
-	}
-
-	/* Segmentos */
-	.main-seg{
-		padding: 16px;
-	}
-
-	.segmentos-container {
-		display: grid;
-		grid-template-columns: 1fr;
-		gap: 20px;
-		margin-top: 16px;
-	}
-
-	/* Footer */
-	.container-footer {
-		display: flex;
-		align-items: flex-start;
-		justify-content: space-around;
-		padding: 16px;
-		display: flex;
-		flex-direction: column-reverse;
-		gap: 42px;
-	}
-
-	.footer-menu>a {
-		padding: 8px;
-	}
-
-	.footer-logo>img{
-		max-width: 120px;
-	}
-	
-	.divider{
-		width: 100%;
-		display: block;
-		height: 1px;
-		background-color: #343A40;
-	}
 }
