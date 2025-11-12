@@ -34,11 +34,13 @@ Todos os produtos Quixabeira recebem **Pintura Eletrostática**, o que garante:
 * **Status:** Concluído.
 
 ### Estrutura
+```
 ├── assets/ Arquivos como a logo (footer-logo-mobile.png) e imagens gerais 
 ├── css/ Arquivos de estilo
 ├── ./ Código-fonte principal 
 ├── README.md # Você está aqui 
 └── index.html
+```
 
 ---
 
