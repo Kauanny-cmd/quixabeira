@@ -83,6 +83,10 @@
 		padding: 12px;
 	}
 
+	.banner>p{
+		margin-top: 20px;
+	}
+
 	/* Produtos */
 	#produtos{
 		padding: 16px;

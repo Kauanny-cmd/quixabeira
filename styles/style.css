@@ -46,6 +46,10 @@ a {
 	color: #fff;
 }
 
+b {
+	color: var(--Logo-Colors-Orange-7, #E8520C);
+}
+
 .header {
 	position: fixed;
 	width: 100%;
@@ -304,6 +308,20 @@ a {
 .top-main>p{
 	color: #6C757D;
 }
+
+.banner{
+	background: #F8F9FA;
+	border-radius: 1rem;
+	padding: 1rem;
+	margin-top: 8px;
+}
+
+.banner>p{
+	color: #6C757D;
+	text-align: justify;
+	margin-top: 8px;
+}
+
 .selected {
 	border-bottom: 2px solid var(--Logo-Colors-Orange-7, #E8520C) !important;
 	background-color: transparent !important;
@@ -394,11 +412,6 @@ a {
   	font-family: Roboto, Open Sans, Sans-serif;
 	max-width: 1000px;
 }
-
-.main-info>p>b {
-	color: var(--Logo-Colors-Orange-7, #E8520C);
-}
-
 
 /* Container das abas */
 .tab-pane {
@@ -559,10 +572,7 @@ a {
 }
 
 .footer-contact>h3 {
-	font-size: 18px;
-	font-weight: bold;
 	line-height: 18px;
-	text-align: left;
 	color: #FFFFFF;
 }
 
